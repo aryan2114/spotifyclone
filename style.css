@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(1, 1, 1, 0.672);
+}
+nav{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: aliceblue;
+}
+nav ul li{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 42px;
+    border-radius: 95px;
+    padding: 0 8px;
+}
+.container{
+    min-height: 72vh;
+    background-color: rgba(0, 0, 0, 0.274);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    color: white;
+    background-image: url('The_Local_Train_Celebanything.jpg');
+    opacity: 0.5rem;
+}
+.bottom{
+    position: sticky;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    flex-direction: column;
+}
+#myProgressBar{
+    width:88vw ;
+    height: 1px;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px ;
+    cursor: pointer;
+}
+.bottom img{
+    height: 25px;
+    filter: invert(1);
+    margin-top: 15px;
+    cursor: pointer;
+}
+.songItem{
+   
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(8, 8, 8, 0.769);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 25%;
+    color: rgb(239, 232, 232);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+    font-size: small;
+}
+.songItem img{
+    width: 100%;
+    margin: 0 23px;
+    height: 85%;
+    border-radius: 23px;
+}
+@media screen and (max-width: 568px) {
+    /* Adjust styles for larger screens if needed */
+    .container {
+        width: 70%;
+    }
+
+    .songItem {
+        width: 25%;
+    }
+    .songItem img{
+        width: 100%;
+        margin: 0 23px;
+        height: 75%;
+        border-radius: 23px;
+    }
+    #myProgressBar{
+        width:88vw ;
+        height: 5px;
+        justify-content: center;
+        align-items: center;
+        margin-top:20px ;
+        cursor: pointer;
+    }
+    .bottom{
+        position: sticky;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.651);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        flex-direction: column;
+    }
+}

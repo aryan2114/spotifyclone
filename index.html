@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your Fav Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://developer.spotify.com/images/guidelines/design/icon4@2x.png" alt="loading">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <div class="songlist">
+            <h1>Best of TLT - The Local Train</h1>
+            <div>
+                <div class="songItem">
+                    <img src="https://c.saavncdn.com/191/Choo-Lo-feat-Saif-Ali-Khan--English-2019-20191109070305-500x500.jpg" alt="">
+                    <span>Choo Loo</span>
+                    <span class="songListplay"></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <img src="play-circle-svgrepo-com.svg" alt="" id="masterplay" class="play">
+            <img src="pause-circle-svgrepo-com.svg" alt="masterpause" id="masterpause">
+            <i></i>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
